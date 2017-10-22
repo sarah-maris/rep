@@ -1,0 +1,73 @@
+/*
+Theme Name: Real Estate People
+Theme URI:
+Description: Child theme of twentyseventeen theme for RealEstatePeople.us
+Author URI:
+Template: twentyseventeen
+Version: 1.0
+Update: 10-21-17
+*/
+
+
+body.page-template-template-full-width #content #primary {
+	max-width: 100%;
+}
+
+body.page-template-template-full-width #content #primary .entry-header,
+body.page-template-template-full-width #content #primary .entry-content {
+    float: none;
+    width: 100%;
+}
+
+body.page-template-template-full-width #content #primary .entry-header {
+    margin-bottom: 4em;
+}
+
+
+.site-info {
+	font-weight: bold;
+}
+
+@media screen and (min-width: 30em) {
+	.page-one-column .panel-content .wrap {
+	    max-width: 1200px;
+	}
+
+	.panel-content .wrap {
+		padding: 3.5em 0 0 0;
+	}
+}
+
+
+@media screen and (min-width: 48em) {
+	body.page-template-template-full-width .wrap {
+	    max-width: 1200px;
+	}
+
+	.navigation-top {
+	    font-size: 1rem;
+	}
+
+	.panel-content .wrap {
+		padding: 4em 0 0 0;
+	}
+
+}
+.site-title,
+.site-description {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+/*
+.site-branding .wrap {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 0;
+	max-width: 100%;
+	width: 100%;
+}*/
+/* Colors:
+ #008000
+*/
