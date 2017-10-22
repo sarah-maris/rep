@@ -28,6 +28,19 @@ body.page-template-template-full-width #content #primary .entry-header {
 	font-weight: bold;
 }
 
+.site-title,
+.site-description {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.site-description {
+ font-style: italic;
+}
+
 @media screen and (min-width: 30em) {
 	.page-one-column .panel-content .wrap {
 	    max-width: 1200px;
@@ -53,14 +66,7 @@ body.page-template-template-full-width #content #primary .entry-header {
 	}
 
 }
-.site-title,
-.site-description {
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-}
+
 /*
 .site-branding .wrap {
 	background-color: rgba(0, 0, 0, 0.5);
