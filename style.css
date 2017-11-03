@@ -8,9 +8,9 @@ Version: 1.0
 Update: 10-21-17
 */
 
-
+/* add full width page styling  */
 body.page-template-template-full-width #content #primary {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 body.page-template-template-full-width #content #primary .entry-header,
@@ -23,57 +23,185 @@ body.page-template-template-full-width #content #primary .entry-header {
     margin-bottom: 4em;
 }
 
-
-.site-info {
-	font-weight: bold;
+#panel1 .wrap {
+  padding: 0;
 }
 
+/* add black outline so text is sharper on image */
 .site-title,
 .site-description {
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* adjust vertical spacing for title and description */
+.site-branding {
+	margin-bottom: -5px;
 }
 
 .site-description {
  font-style: italic;
 }
 
-@media screen and (min-width: 30em) {
-	.page-one-column .panel-content .wrap {
-	    max-width: 1200px;
-	}
-
-	.panel-content .wrap {
-		padding: 3.5em 0 0 0;
-	}
+/* change top navigation to green and black */
+.navigation-top {
+  background-color: #386A2A;
+  border-bottom: 2px solid #eee;
+  border-top: 5px solid  #386A2A;
 }
 
+.navigation-top .menu-item > a,
+.navigation-top .page_item > a {
+  color: #000;
+}
+
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
+  color: #eee;
+}
+
+/* remove entry headers */
+.panel-content .entry-header {
+  display:none;
+}
+
+.entry-header {
+  display: none;
+}
+
+/* footer */
+.site-footer {
+  margin-top: 0;
+}
+
+/* copyright text */
+.site-info {
+  font-weight: bold;
+}
+
+
+/* add light background to footer */
+footer {
+  background-color: rgba(56,106,42,0.3);
+}
+
+/* style services section */
+.services-title h2 {
+  color: #eee;
+  font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.25;
+	letter-spacing: 0.08em;
+}
+
+.services h5 {
+  color: #eee;
+  font-size: 20px;
+  font-size: 1.2rem;
+}
+
+.services p,
+.services h3 {
+   color: #e1f1dd;
+}
+
+.services h3 {
+   color: #eee;
+}
+
+.widget-area,
+.widget_sow-editor {
+  padding-bottom: 0;
+}
+
+/* make services images circles */
+.sow-icon-image {
+  border-radius: 50%;
+}
+
+/* reduce vertical spaced for quote panel */
+.panel-grid-cell .panel-last-child {
+    margin-top: -20px;
+}
+
+/* make services 2 per column at 1000px width */
+@media (max-width: 1000px){
+  .services .so-widget-sow-features-default-b92017409113 .sow-features-list.sow-features-responsive .sow-features-feature {
+      width: 50% !important;
+      margin-bottom: 50px;
+  }
+}
+
+/* make services 1 per column at 520px width */
+@media (max-width: 520px) {
+  .services .so-widget-sow-features-default-b92017409113 .sow-features-list.sow-features-responsive .sow-features-feature {
+      width: 100% !important;
+      float: none;
+      margin-bottom: 40px;
+    }
+}
+
+/* adjust page width for full width page */
+@media screen and (min-width: 30em) {
+  .page-one-column .panel-content .wrap {
+      max-width: 1200px;
+  }
+
+  .panel-content .wrap {
+    padding: 3.5em 3em 0 3em;
+  }
+
+	.services {
+		padding: 0 3em;
+	}
+
+}
 
 @media screen and (min-width: 48em) {
-	body.page-template-template-full-width .wrap {
-	    max-width: 1200px;
-	}
+  /* adjust width for full-width page */
+  body.page-template-template-full-width .wrap {
+      max-width: 1200px;
+  }
 
-	.navigation-top {
-	    font-size: 1rem;
-	}
+  .panel-content .wrap {
+    padding: 4em 3em 0 3em;
+  }
 
-	.panel-content .wrap {
-		padding: 4em 0 0 0;
-	}
+  /* header font */
+  .navigation-top {
+      font-size: 16px;
+      font-size: 1rem;
+  }
+
+  /* services section */
+  .services-title h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+
+   /* footer */
+  .site-footer .widget-column.footer-widget-2 {
+    padding-left: 20px;
+    width: 50%;
+  }
+
+  .site-footer .widget-column.footer-widget-1 {
+    padding-right: 20px;
+    width: 50%;
+  }
+
+  /* adjust panel image size to half page */
+  .panel-image {
+     height: 50vh;
+  }
 
 }
-
-/*
-.site-branding .wrap {
-	background-color: rgba(0, 0, 0, 0.5);
-	margin: 0;
-	max-width: 100%;
-	width: 100%;
-}*/
 /* Colors:
  #008000
+ #386A2A
+ #e1f1dd
 */
